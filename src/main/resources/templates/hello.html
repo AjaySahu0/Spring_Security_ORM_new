@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Hello World</title>
+</head>
+<body>
+	<h1>Hello world!</h1>
+	<form th:action="@{/logout}" method="post">
+		<input type="submit" value="Sign Out" />
+	</form>
+	<br>
+	    Click <a th:href="@{/admin}">here</a> to go admin page. 
+	    <br>
+	    Click <a th:href="@{/customer}">here</a> to go customer page. 
+</body>
+</html>
